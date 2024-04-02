@@ -62,7 +62,7 @@ export default function Form() {
           onChange={(e) =>
             setFormValues({ ...formValues, number: e.target.value })
           }
-          placeholder="Eg. 059 929 3572"
+          placeholder="Eg. 23359 929 3572"
           className="text-sm border-[1px] p-2 outline-none rounded"
         />
         <div className="mt-10">
