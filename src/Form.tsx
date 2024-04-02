@@ -19,12 +19,12 @@ export default function Form() {
     e.preventDefault();
     console.log(formValues);
     setLoading(true);
-    setDone(true); 
+    setDone(false); 
     const url = "https://send-sms-oap4.onrender.com/api/send-sms";
     try {
       await axios.post(url, formValues);
       setLoading(false);
-      setDone(false);
+      setDone(true);
       setFormValues({
         voucherCode:'',
         number:''
