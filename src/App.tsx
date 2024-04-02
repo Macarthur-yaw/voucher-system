@@ -10,7 +10,9 @@ function App() {
     <Header/>
 
     <Form/>
+    <div className="p-6">
    <Footer/>
+   </div>
     </div>
     </>
   )
