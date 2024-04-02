@@ -19,7 +19,7 @@ export default function Form() {
     e.preventDefault();
     console.log(formValues);
     setLoading(true);
-    setDone(false); 
+    setDone(true); 
     const url = "https://send-sms-oap4.onrender.com/api/send-sms";
     try {
       await axios.post(url, formValues);
@@ -75,13 +75,14 @@ export default function Form() {
         className={`${done ? "bg-black bg-opacity-10 w-full h-screen top-0 fixed left-0" : ""}`}
         onClick={() => setDone(false)}
       ></div>
+  <div className="relative">
       {done && (
-        <div className="absolute border-[1px] shadow-md bg-white rounded-sm top-1/2 -transform -translate-y-1/2 left-1/2 -translate-x-1/2 p-8 flex items-center">
+        <div className="absolute border-[1px] w-full shadow-md bg-white rounded-sm top-1/2 -transform -translate-y-1/2 left-1/2 -translate-x-1/2 p-8 flex items-center text-sm">
           <FaCheck className="text-green-500 mr-2" /> A message has been sent to your phone.
-          <br/>
+      
           Might take a while to show.
         </div>
-      )}
+      )}</div>
     </div>
   );
 }
