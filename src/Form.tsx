@@ -20,7 +20,7 @@ export default function Form() {
     console.log(formValues);
     setLoading(true);
     setDone(false); 
-    const url = "http://localhost:5000/api/send-sms";
+    const url = "https://send-sms-oap4.onrender.com/api/send-sms";
     try {
       await axios.post(url, formValues);
       setLoading(false);
@@ -62,7 +62,7 @@ export default function Form() {
           onChange={(e) =>
             setFormValues({ ...formValues, number: e.target.value })
           }
-          placeholder="Eg. 23359 929 3572"
+          placeholder="Eg. 233599293572"
           className="text-sm border-[1px] p-2 outline-none rounded"
         />
         <div className="mt-10">
