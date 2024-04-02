@@ -24,7 +24,7 @@ export default function Form() {
     try {
       await axios.post(url, formValues);
       setLoading(false);
-      setDone(true);
+      setDone(false);
       setFormValues({
         voucherCode:'',
         number:''
