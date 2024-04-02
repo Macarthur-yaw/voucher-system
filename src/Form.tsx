@@ -37,7 +37,7 @@ export default function Form() {
   }
 
   return (
-    <div className="border-[1px] shadow-md border-slate-200 md:w-1/4 w-1/2 mx-auto bg-white ">
+    <div className="border-[1px] shadow-md border-slate-200 md:w-1/4  mx-auto bg-white ">
       <form onSubmit={handleSubmit} className="flex p-6 flex-col">
         <span className="text-sm mb-2 font-semibold -tracking-widest">
           Voucher code
