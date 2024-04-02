@@ -8,11 +8,12 @@ function App() {
     <>
     <div className="bg-[#f8f9fb] min-h-screen">
     <Header/>
-
-    <Form/>
     <div className="p-6">
+   
+    <Form/>
+    </div>
    <Footer/>
-   </div>
+
     </div>
     </>
   )
